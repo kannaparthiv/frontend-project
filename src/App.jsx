@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./Kanna.css";
+import Parthiv from "./Parthiv";
 
 function App() {
   return (
     <>
-      {/* ================= NAVBAR ================= */}
-
+      {/* Navbar */}
       <nav className="navbar">
-        <h1 className="logo">Portfolio</h1>
+        <h1>Portfolio</h1>
 
         <ul className="nav-links">
           <li>
@@ -32,199 +32,98 @@ function App() {
         </ul>
       </nav>
 
-      {/* ================= HOME ================= */}
+      {/* Hero */}
+      <Parthiv />
 
-      <section id="home" className="hero">
-
-        <div className="hero-content">
-
-          <h1 className="hero-title">
-            Hello, I'm <span>parthiv</span>
-          </h1>
-
-          <h2>Java Full Stack Developer</h2>
-
-          <p>
-            I am a Java Full Stack Developer with knowledge of
-            Java, React JS, HTML, CSS, JavaScript, Spring Boot
-            and SQL.
-          </p>
-
-          <div className="buttons">
-
-            <button>
-              Hire Me
-            </button>
-
-            <button>
-              Download CV
-            </button>
-
-          </div>
-
-        </div>
-
-        <div className="hero-image">
-
-          <img
-           src="img.jpg" alt="Profile" 
-          />
-
-        </div>
-
-      </section>
-
-      {/* ================= ABOUT ================= */}
-
-      <section id="about" className="section">
-
+      {/* About */}
+      <section className="section" id="about">
         <h1>About Me</h1>
 
         <p>
-          I am a Java Full Stack Developer skilled in HTML,
-          CSS, Bootstrap, JavaScript, React JS, Java, SQL
-          and Spring Boot. I enjoy building responsive and
-          user-friendly web applications.
+          I am a passionate Java Full Stack developer and trainer interested
+          in building responsive and user-friendly web applications.
         </p>
-
       </section>
 
-      {/* ================= SKILLS ================= */}
-
-      <section id="skills" className="section">
-
-        <h1>Skills</h1>
+      {/* Skills */}
+      <section className="section" id="skills">
+        <h1>My Skills</h1>
 
         <div className="skills-grid">
-
-          <div className="card">
-            HTML
-          </div>
-
-          <div className="card">
-            CSS
-          </div>
-
-          <div className="card">
-            Bootstrap
-          </div>
-
-          <div className="card">
-            JavaScript
-          </div>
-
-          <div className="card">
-            React JS
-          </div>
-
-          <div className="card">
-            Java
-          </div>
-
-          <div className="card">
-            Spring Boot
-          </div>
-
-          <div className="card">
-            SQL
-          </div>
-
+          <div className="card">HTML</div>
+          <div className="card">CSS</div>
+          <div className="card">JavaScript</div>
+          <div className="card">React.js</div>
+          <div className="card">Java</div>
+          <div className="card">Spring Boot</div>
+          <div className="card">MySQL</div>
+          <div className="card">Git & GitHub</div>
         </div>
-
       </section>
 
-      {/* ================= PROJECTS ================= */}
-
-      <section id="projects" className="section">
-
-        <h1>Projects</h1>
+      {/* Projects */}
+      <section className="section" id="projects">
+        <h1>My Projects</h1>
 
         <div className="project-grid">
 
           <div className="project-card">
-
-            <h3>
-              Mango Business
-            </h3>
-
+            <h3>Food Delivery Application</h3>
             <p>
-              Developed a responsive Mango Business website
-              using HTML, CSS, Bootstrap and JavaScript.
+              A web application for browsing food items, managing a cart,
+              and placing orders.
             </p>
-
           </div>
 
           <div className="project-card">
-
-            <h3>
-              Portfolio Website
-            </h3>
-
+            <h3>Online Code Editor</h3>
             <p>
-              Developed a responsive personal portfolio
-              website using React JS.
+              A web-based code editor that allows users to write and execute
+              code in an interactive environment.
             </p>
-
           </div>
 
           <div className="project-card">
-
-            <h3>
-              E-Commerce Website
-            </h3>
-
+            <h3>Weather Application</h3>
             <p>
-              Developed an E-Commerce application using
-              React JS and Spring Boot.
+              A weather application that retrieves weather information using
+              a REST API.
             </p>
-
           </div>
 
         </div>
-
       </section>
 
-      {/* ================= CONTACT ================= */}
-
-      <section id="contact" className="section">
-
-        <h1>
-          Contact Me
-        </h1>
+      {/* Contact */}
+      <section className="section" id="contact">
+        <h1>Contact Me</h1>
 
         <form className="contact-form">
-
           <input
             type="text"
-            placeholder="Enter Name"
+            placeholder="Your Name"
           />
 
           <input
             type="email"
-            placeholder="Enter Email"
+            placeholder="Your Email"
           />
 
           <textarea
             rows="5"
-            placeholder="Enter Message"
+            placeholder="Your Message"
           ></textarea>
 
           <button type="submit">
             Send Message
           </button>
-
         </form>
-
       </section>
 
-      {/* ================= FOOTER ================= */}
-
+      {/* Footer */}
       <footer>
-
-        © 2026 parthiv | All Rights Reserved
-
+        <p>© 2026 Parthiv. All Rights Reserved.</p>
       </footer>
-
     </>
   );
 }
